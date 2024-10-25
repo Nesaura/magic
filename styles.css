@@ -39,9 +39,10 @@ body{
 }
 
 .news{
+    align-items: center;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(69, 69, 69);
+    background-color: rgb(29, 29, 29);
 }
 
 .news p{
@@ -75,7 +76,26 @@ body{
     height: 200px;
 }
 
+.newscard:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgb(129, 129, 129);
+    transition: 0.2s;
+}
+
+.newscard a{
+    text-decoration: none;
+    color: white;
+}
+
 /* Members list! */
+
+.membertitle{
+    text-align: center;
+    background-color: whitesmoke;
+    margin: 0px;
+    border-style: solid;
+    border-color: whitesmoke;
+}
 
 .memberlist{
     background-color: whitesmoke;
@@ -89,7 +109,6 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    margin-left: 20px;
     margin-bottom: 10px;
 }
 
@@ -125,13 +144,13 @@ body{
 }
 
 .aboutitem img{
-    height: 300px;
+    height: 200px;
 }
 
 .aboutitem p{
     text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .aboutitem a{
@@ -173,7 +192,7 @@ footer p{
 }
 
 /* General mobile layout adjustments */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1180px) {
     .navdiv {
         flex-direction: column;
         text-align: center;
@@ -287,4 +306,40 @@ footer p{
 
 .dark-mode .aboutitem a{
     color: white;
+}
+
+/* 404 Page! */
+
+.Error404{
+    text-align: center;
+}
+
+.Error404 button{
+    font-size: 19px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+}
+
+.Error404 button:active{
+    background-color: whitesmoke;
+    color: #000000;
+}
+
+/* News article page */
+
+.article{
+    background: linear-gradient(#31558e, #c7effe);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 100px;
+}
+
+.artcontent{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
 }
