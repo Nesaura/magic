@@ -20,6 +20,8 @@
                     <li><a href="#">About MAGIC</a></li>
                     <li><a href="#">What We Do</a></li>
                     <li><a href="#">Learn More</a></li>
+                    <button id="dark-mode-toggle">Dark mode toggle</button>
+                    
                 </ul>
             </div>
         </div>
@@ -176,5 +178,30 @@
             <a href="#">Link</a>
         </div>
     </footer>
+
+    <script>
+        // Check user preference on page load
+        window.onload = function() {
+            const isDarkMode = localStorage.getItem('dark-mode');
+            if (isDarkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        }
+    
+        // Toggle dark mode on button click
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        toggleButton.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+    
+            // Save user preference
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('dark-mode', 'enabled');
+            } else {
+                localStorage.setItem('dark-mode', 'disabled');
+            }
+        });
+    </script>
+    
+
 </body>
 </html>
