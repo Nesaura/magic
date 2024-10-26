@@ -9,12 +9,14 @@
     color: rgb(0, 0, 0);
     padding-left: 15px;
     padding-right: 15px;
+    font-weight: bold;
 }
 
 .navdiv{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-weight: bold;
 }
 
 .logo{
@@ -170,25 +172,38 @@ body{
 footer{
     background-color: rgb(30, 30, 30);
     color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 footer p{
+    position: sticky;
     font-weight: bold;
 }
 
-.footerlinks{
+.footerredirect{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
-.footerlinks a{
+.footerredirect a{
     color: white;
     text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.footerlink{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.footerredirect h1{
+    font-weight: 300;
+    font-size: 20px
 }
 
 /* General mobile layout adjustments */
@@ -275,39 +290,6 @@ footer p{
     }
 }
 
-/* Dark mode styles */
-.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
-
-.dark-mode .navbar {
-    background-color: #1c1c1c;
-    color: #ffffff;
-}
-
-.dark-mode header a {
-    color: #ffffff;
-}
-
-.dark-mode .newscard {
-    background-color: rgb(33, 33, 33);
-    border-color: rgba(33, 33, 33);
-}
-
-.dark-mode .memberlist{
-    background-color: #2c2c2c;
-}
-
-.dark-mode footer {
-    background-color: #1c1c1c;
-    color: #ffffff;
-}
-
-.dark-mode .aboutitem a{
-    color: white;
-}
-
 /* 404 Page! */
 
 .Error404{
@@ -342,4 +324,11 @@ footer p{
     background-color: white;
     padding: 20px;
     border-radius: 10px;
+}
+
+/* About page */
+
+.aboutpagecontent{
+    padding: 20px;
+    background-color: whitesmoke;
 }
