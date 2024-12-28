@@ -176,7 +176,16 @@ footer{
 
 footer p{
     position: sticky;
-    font-weight: bold;
+    margin: 0px;
+}
+
+.separator{
+    background-image: url(assets/images/Despair.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #6628bd;
+    text-align: center;
+    padding: 30px;
 }
 
 .footerredirect{
@@ -206,8 +215,14 @@ footer p{
     font-size: 20px
 }
 
+.footerstuff{
+    text-align: center;
+    background-color: black;
+    padding: 30px;
+}
+
 /* General mobile layout adjustments */
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1024px) {
     .navdiv {
         flex-direction: column;
         text-align: center;
