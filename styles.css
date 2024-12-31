@@ -20,8 +20,15 @@
 }
 
 .logo{
+    display: flex;
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
+}
+
+.logo img{
+    height: 60px;
+    margin-right: 10px;
 }
 
 header li{
@@ -133,13 +140,13 @@ body{
 
 .about{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-evenly;
 }
 
 .aboutitem{
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 20px;
@@ -190,7 +197,7 @@ footer p{
 
 .footerredirect{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-evenly;
     padding: 20px;
 }
@@ -223,6 +230,10 @@ footer p{
 
 /* General mobile layout adjustments */
 @media only screen and (max-width: 1024px) {
+    .logo{
+        flex-direction: column;
+    }
+
     .navdiv {
         flex-direction: column;
         text-align: center;
@@ -326,7 +337,7 @@ footer p{
     color: #000000;
 }
 
-/* News article page */
+/* News article page (will probably get deprecated soon so expect it to be deleted) */
 
 .article{
     background: linear-gradient(#31558e, #c7effe);
